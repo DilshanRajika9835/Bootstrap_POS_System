@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="img/logo.png">
+    <title>Keels_Super_Center</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="CustomerForm.html">CUSTOMER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="OrderForm.html">ORDER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ItemForm.html">ITEM</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Other
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Orders</a></li>
+                        <li><a class="dropdown-item" href="#">Daily_Income</a></li>
+                        <li><a class="dropdown-item" href="#">Monthly_Income</a></li>
+                        <li><a class="dropdown-item" href="#">Yearly_Income</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--------------------------------------->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/img2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item active">
+            <img src="img/img1.png" class="d-block w-100" alt="...">
+        </div>
+
+    </div>
+</div>
+<!--------------------------------------->
+<div class="container-fluid mt-3 mb-3">
+    <div class="row">
+        <div class="col-sm border m-1">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Item Code</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="MDE09736">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label" >Item Name</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Anchor Milk ">
+                </div>
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Description</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Milk pack 1Kg..">
+                </div>
+                <div class="col-6">
+                    <label for="contact" class="form-label">Unit_Price</label>
+                    <input type="number" class="form-control" id="contact" placeholder="Rs.400.00/=">
+                </div>
+                <div class="col-4">
+                    <label for="qty" class="form-label">Qty_OnHand</label>
+                    <input type="number" class="form-control" id="qty" placeholder="40">
+                </div>
+
+                <section class="btn-group ">
+                    <div class="col-4 btn-group m-1 w-25">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                    <div class="col-4 btn-group  m-1 w-25">
+                        <button type="submit" class="btn btn-warning">Update</button>
+                    </div>
+                    <div class="col-4 btn-group m-1 w-25">
+                        <button type="submit" class="btn btn-success">Save</button>
+                    </div>
+                </section>
+
+
+            </form>
+        </div>
+        <div class="col-sm border m-1">
+            <table class="table caption-top table-hover ">
+                <caption>List of Items</caption>
+                <thead >
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Description </th>
+                    <th scope="col">Unit Price(Rs./=)</th>
+                    <th scope="col">Qty_OnHand</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>C001</td>
+                    <td>Milk pack</td>
+                    <td>Milk Pack 1kg </td>
+                    <td>400.00</td>
+                    <td>30</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>C001</td>
+                    <td>Milk pack</td>
+                    <td>Milk Pack 1kg </td>
+                    <td>400.00</td>
+                    <td>30</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>C001</td>
+                    <td>Milk pack</td>
+                    <td>Milk Pack 1kg </td>
+                    <td>400.00</td>
+                    <td>30</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+<!--------------------------------------->
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
