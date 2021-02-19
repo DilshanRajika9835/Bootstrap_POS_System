@@ -6,8 +6,23 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="icon" href="img/logo.png">
     <title>Keels_Super_Center</title>
+    <style>
+        @media all and (min-width:483px )and (max-width:621px ) {
+
+            #customer_table{
+                font-size: 9px!important;
+
+            }
+            .table > :not(caption) > * > * {
+                padding: 0;
+            }
+            img{
+                width: 540px;
+            }
+        }
+    </style>
 </head>
-<body>
+<body style="overflow-x: hidden">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
     <div class="container-fluid ">
         <a class="navbar-brand" href="index.html">HOME</a>
@@ -61,7 +76,7 @@
 <div class="container-fluid  mt-3 mb-3 ">
     <div class="row">
         <div class="col-sm border m-1 ">
-            <table class="table caption-top table-hover ">
+            <table class="table caption-top table-hover " id="customer_table">
                 <caption>List of Customers</caption>
                 <thead class="btn-danger">
                 <tr>
@@ -90,7 +105,7 @@
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>C001</td>
+                    <td>C002</td>
                     <td>Dilshan</td>
                     <td>Rajika</td>
                     <td>Hapugala</td>
@@ -101,7 +116,7 @@
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td>C001</td>
+                    <td>C003</td>
                     <td>Dilshan</td>
                     <td>Rajika</td>
                     <td>Hapugala</td>
@@ -115,6 +130,7 @@
         </div>
 
     </div>
+
 </div>
 <!--------------------------------------->
 

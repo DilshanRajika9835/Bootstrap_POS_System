@@ -6,8 +6,23 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="icon" href="img/logo.png">
     <title>Keels_Super_Center</title>
+    <style>
+        @media all and (min-width:483px )and (max-width:621px ) {
+
+            #item_table{
+                font-size: 9px!important;
+
+            }
+            .table > :not(caption) > * > * {
+                padding: 0;
+            }
+            img{
+                width: 427px;
+            }
+        }
+    </style>
 </head>
-<body>
+<body style="overflow-x: hidden">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
     <div class="container-fluid ">
         <a class="navbar-brand" href="index.html">HOME</a>
@@ -92,7 +107,7 @@
             </form>
         </div>
         <div class="col-sm border m-1">
-            <table class="table caption-top table-hover ">
+            <table class="table caption-top table-hover " id="item_table">
                 <caption>List of Items</caption>
                 <thead >
                 <tr>
