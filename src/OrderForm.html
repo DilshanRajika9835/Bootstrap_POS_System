@@ -16,16 +16,14 @@
             .table > :not(caption) > * > * {
                 padding: 0;
             }
-            img{
-                width: 468px;
-            }
+
         }
     </style>
 </head>
 <body style="overflow-x: hidden">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
     <div class="container-fluid ">
-        <a class="navbar-brand" href="index.html">HOME</a>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png"alt="image" style="width: 59px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,18 +43,12 @@
                         Other
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Orders</a></li>
-                        <li><a class="dropdown-item" href="#">Daily_Income</a></li>
-                        <li><a class="dropdown-item" href="#">Monthly_Income</a></li>
-                        <li><a class="dropdown-item" href="#">Yearly_Income</a></li>
+                        <li><a class="dropdown-item" href="OrderFormTM.html">Order_Details</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
                     </ul>
                 </li>
 
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
     </div>
 </nav>
@@ -65,8 +57,8 @@
 <!--------------------------------------->
 <div class="container-fluid mt-3 mb-3 "  >
     <div class="row">
-        <div class="col-6"><img src="img/order.png" alt="image"></div>
-        <div class="col-6 col-sm-12 col-xl-6">
+        <img src="img/order.png" alt="image"  class="col-12 col-sm-12 col-xl-6 col-md-12 col-xxl-6  ">
+        <div  class="col-12 col-sm-12 col-xl-6 col-md-12 col-xxl-6  ">
             <form class="row g-3 border mt-3 ">
                 <div class="col-7">
                     <label for="order_id" class="form-label">Order ID</label>
@@ -91,43 +83,34 @@
                     </select>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 m-1">
                     <label for="contact" class="form-label">Item Name</label>
                     <input type="text" class="form-control" id="contact" placeholder="Anchor Milk">
                 </div>
-                <div class="col-12">
+                <div class="col-12 m-1">
                     <label for="description" class="form-label">Item Description</label>
                     <input type="text" class="form-control" id="description" placeholder="Milk Pack 400g">
                 </div>
-                <div class="col-4">
+                <div class="col-3 m-1">
                     <label for="price" class="form-label">Unit_Price</label>
                     <input type="number" class="form-control" id="price" placeholder="400.00/=">
                 </div>
-                <div class="col-4">
+                <div class="col-3 m-1">
                     <label for="qty" class="form-label">Qty_OnHand</label>
                     <input type="number" class="form-control" id="qty" placeholder="40">
                 </div>
-                <div class="col-4">
+                <div class="col-3 m-1">
                     <label for="orderQty" class="form-label">Order_Qty</label>
                     <input type="number" class="form-control" id="orderQty" placeholder="40">
                 </div>
-                <section class="btn-group justify-content-center">
-                    <div class="col-4 btn-group m-1 w-25">
-                        <button type="button" class="btn btn-danger">Clear</button>
-                    </div>
-                    <div class="col-4 btn-group m-1 w-25">
-                        <button type="submit" class="btn btn-success">Place Order</button>
-                    </div>
-                </section>
-
 
             </form>
         </div>
         <div class=" border  mt-3">
-            <table class="table caption-top table-hover " id="order_table">
+            <table class="table caption-top table-hover table-bordered" id="order_table">
                 <caption>List of Items</caption>
                 <thead >
-                <tr>
+                <tr class="bg-warning">
                     <th scope="col">No</th>
                     <th scope="col">Item Code</th>
                     <th scope="col">Item Name</th>
@@ -174,6 +157,34 @@
 
     </div>
 </div>
+<form class="m-1">
+    <section class="container-fluid border">
+        <div class="row justify-content-center">
+            <div class="col-3 fw-bold">
+                <label for="total" class=" col-form-label">Total(Rs)</label>
+                <input type="password" class="form-control " id="total" placeholder=" Total Cost Rs/=" disabled>
+            </div>
+            <div class="col-3 fw-bold">
+                <label for="cash" class=" col-form-label ">Cash(Rs)</label>
+                <input type="password" class="form-control " id="cash" placeholder=" Total Cost Rs/=">
+            </div>
+            <div class="col-3 fw-bold">
+                <label for="dilscoun" class=" col-form-label ">Discount(Rs)</label>
+                <input type="password" class="form-control " id="dilscoun" placeholder=" Total Cost Rs/=" disabled>
+            </div>
+            <div class="col-3 fw-bold">
+                <label for="balance" class=" col-form-label ">Balance(Rs)</label>
+                <input type="password" class="form-control " id="balance" placeholder=" Total Cost Rs/=" disabled>
+            </div>
+            <div class="col-12 mt-2 text-end">
+                <button type="button" class="btn btn-danger mb-2">Cancel</button>
+                <button type="button" class="btn btn-success mb-2">Place Order</button>
+            </div>
+        </div>
+    </section>
+
+
+</form>
 <!--------------------------------------->
 
 <script src="js/bootstrap.js"></script>

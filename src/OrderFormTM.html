@@ -9,23 +9,21 @@
     <style>
         @media all and (min-width:483px )and (max-width:621px ) {
 
-            #customer_table{
+            #item_table{
                 font-size: 9px!important;
 
             }
             .table > :not(caption) > * > * {
                 padding: 0;
             }
-            img{
-                width: 540px;
-            }
+
         }
     </style>
 </head>
 <body style="overflow-x: hidden">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
     <div class="container-fluid ">
-        <a class="navbar-brand" href="index.html">HOME</a>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png"alt="image" style="width: 59px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,18 +43,12 @@
                         Other
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Orders</a></li>
-                        <li><a class="dropdown-item" href="#">Daily_Income</a></li>
-                        <li><a class="dropdown-item" href="#">Monthly_Income</a></li>
-                        <li><a class="dropdown-item" href="#">Yearly_Income</a></li>
+                        <li><a class="dropdown-item" href="OrderFormTM.html">Order_Details</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
                     </ul>
                 </li>
 
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
         </div>
     </div>
 </nav>
@@ -75,63 +67,69 @@
 <!--------------------------------------->
 <div class="container-fluid  mt-3 mb-3 ">
     <div class="row">
-        <div class="col-sm border m-1 ">
-            <table class="table caption-top table-hover " id="customer_table">
-                <caption>List of Customers</caption>
+        <div class=" border m-1 ">
+            <table class="table caption-top table-hover  " id="item_table">
+                <caption>List of Order_Details</caption>
                 <thead class="btn-danger">
                 <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Customer ID</th>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Address </th>
-                    <th scope="col">City</th>
-                    <th scope="col">Country</th>
-                    <th scope="col">Contact No</th>
-                    <th scope="col">Zip Code</th>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Unit Price(Rs/=) </th>
+                    <th scope="col">qty</th>
+                    <th scope="col">Total</th>
+
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>C001</td>
-                    <td>Dilshan</td>
-                    <td>Rajika</td>
-                    <td>Hapugala</td>
-                    <td>Galle</td>
-                    <td>Sri Lanka</td>
-                    <td>+94 766681528</td>
-                    <td>80163</td>
+                    <td>ORD001</td>
+                    <td>IEM0034</td>
+                    <td>Anchor Milk Pack</td>
+                    <td>Anchor Milk Pack 400g </td>
+                    <td>450.00</td>
+                    <td>3</td>
+                    <td>1350</td>
+
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>C002</td>
-                    <td>Dilshan</td>
-                    <td>Rajika</td>
-                    <td>Hapugala</td>
-                    <td>Galle</td>
-                    <td>Sri Lanka</td>
-                    <td>+94 766681528</td>
-                    <td>80163</td>
+                    <td>ORD002</td>
+                    <td>IEM0034</td>
+                    <td>Anchor Milk Pack</td>
+                    <td>Anchor Milk Pack 400g </td>
+                    <td>450.00</td>
+                    <td>3</td>
+                    <td>1350</td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td>C003</td>
-                    <td>Dilshan</td>
-                    <td>Rajika</td>
-                    <td>Hapugala</td>
-                    <td>Galle</td>
-                    <td>Sri Lanka</td>
-                    <td>+94 766681528</td>
-                    <td>80163</td>
+                    <td>ORD003</td>
+                    <td>IEM0034</td>
+                    <td>Anchor Milk Pack</td>
+                    <td>Anchor Milk Pack 400g </td>
+                    <td>450.00</td>
+                    <td>3</td>
+                    <td>1350</td>
                 </tr>
                 </tbody>
             </table>
         </div>
 
-    </div>
 
+    </div>
 </div>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+
+
+        </div>
+    </div>
+</section>
 <!--------------------------------------->
 
 <script src="js/bootstrap.js"></script>

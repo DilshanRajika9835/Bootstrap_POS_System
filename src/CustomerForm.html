@@ -16,18 +16,16 @@
             .table > :not(caption) > * > * {
            padding: 0;
             }
-            img{
-                width: 540px;
-            }
+
 
 
         }
     </style>
 </head>
-<body style="overflow-x: hidden">
+<body >
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark  ">
     <div class="container-fluid ">
-        <a class="navbar-brand" href="index.html">HOME</a>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png"alt="image" style="width: 59px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,18 +45,13 @@
                         Other
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Orders</a></li>
-                        <li><a class="dropdown-item" href="#">Daily_Income</a></li>
-                        <li><a class="dropdown-item" href="#">Monthly_Income</a></li>
-                        <li><a class="dropdown-item" href="#">Yearly_Income</a></li>
+                        <li><a class="dropdown-item" href="OrderFormTM.html">Order_Details</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
                     </ul>
                 </li>
 
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
         </div>
     </div>
 </nav>
@@ -66,12 +59,9 @@
 
 <!--------------------------------------->
 <div class="container-fluid mt-3 mb-3 ">
-    <h1>Customer Form</h1>
     <div class="row">
-        <div class="col-5 col-sm-12 col-xl-5 col-md-5">
-            <img src="img/family.png" alt="image" >
-        </div>
-        <div class="col-7 border col-sm-12 col-xl-7 col-md-7 " id="cust_form">
+            <img src="img/family.png" alt="image" class="col-12 col-sm-12 col-xl-6 col-md-12 col-xxl-6  ">
+        <div class="border col-12 col-sm-12 col-xl-6 col-md-12 col-xxl-6 " id="cust_form">
             <form class="row g-3">
                 <div class="col-md-6">
                     <label for="custid" class="form-label" >Customer ID</label>
@@ -134,7 +124,7 @@
                     <div class="border  ">
                         <table class="table caption-top table-hover border" id="customer_table" >
                             <caption>List of Customers</caption>
-                            <thead >
+                            <thead class="bg-warning table-bordered">
                             <tr>
                                 <th scope="col">No</th>
                                 <th scope="col">Customer ID</th>
